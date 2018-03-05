@@ -1,18 +1,17 @@
-# Ultimate Frisbee in Amsterdam
+Ultimate Frisbee in Amsterdam
+=============================
 
+This is what frisbee is: a bunch of people throwing a flat ball 
+through the air while running in circles and trying earning
+style points.
 
-## Frisbee Groups
+## What's up Right Now!
+{: #right-now }
 
-* relaxed social group
-  * [meetup](https://www.meetup.com/Frisbee-Amsterdam/)
-  * [facebook](https://www.facebook.com/groups/ultimate.amsterdam/about/)
-* crunch
-* city league
+* [Pickup](https://www.meetup.com/Frisbee-Amsterdam/) every Sunday on Museumplein around 14:30 to 17:00. Every level is welcome.
 
-## Where to buy frisbees
+## Chat
 
-## Rules and information
+Come talk to use on the frisbee channel on the local slack group:
 
-## Sitemap
-
-{% include page-index.html %}
+https://slofile.com/slack/funsterdam

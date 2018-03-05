@@ -1,4 +1,5 @@
 theme: jekyll-theme-architect
+paginate: 10
 plugins:
 - jekyll-sitemap
 - jekyll-feed

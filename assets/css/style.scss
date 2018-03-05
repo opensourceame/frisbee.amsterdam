@@ -1,0 +1,109 @@
+---
+---
+
+@import 'jekyll-theme-architect';
+@import "normalize";
+@import "rouge-github";
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
+    grid-gap: 0;
+    background: #CCC;
+    // align-content: end;
+    height: 100%;
+}
+
+nav {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    z-index: 0;
+    text-align: right;
+
+    background: #EEE;
+
+    ul {
+        margin: 0; padding: 0;
+
+        ul {
+            margin: 0;
+        }
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    } 
+
+    > ul {
+        > li {
+           > a {
+            font-weight: bold;
+            }
+            
+            margin: 8px 0 8px 0;
+            padding: 0 10px 0 8px;
+            border-bottom: solid 1px #AAA;
+        }
+    }
+
+    h1 {
+        font-size: 20pt;
+        text-align: right;
+        margin: 0 0 0 0;
+        padding: 0;
+        font-family: "Times New Roman";
+        word-spacing: 100px; 
+        color: #050505;
+    }
+
+    header {
+        padding-right: 10px
+    }
+
+    #logo {
+        position: fixed;
+        left: -200px;
+        top: -200px;
+        height: 400px;
+        width: 400px;
+        z-index: -1;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .icons {
+        padding-right: 10px;
+
+        a:link { color: inherit; }
+    }
+}
+
+main {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 8px;
+}
+
+section {
+    margin-left: 40px;
+}
+
+.icon {
+  display: inline-block;
+  width: 1.2em;
+  height: 1.2em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}

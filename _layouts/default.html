@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
+    <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>{{ site.title }} {{ page.title }}</title>
+{% seo %}
+  </head>
+
+  <body>
+    <nav>
+      <header>
+        <div id='logo'>
+          <img src="/images/sundisc.png">
+        </div>
+        <h1>The Ultimate Amsterdam Frisbee Compendium</h1>
+      </header>
+      <ul>
+        <li>
+          <a href='/'>Welcome</a>
+          <ul>
+            <li><a href='/#right-now'>Right Now</a></li>
+            <li><a href='/#chat'>Chat</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href='/news'>News</a>
+          <ul>
+            <li><a href='/news'>2018</a></li>
+            <li><a href='/news'>2017</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href='/events'>Events</a>
+          <ul>
+            <li><a href='/events#times'>Times</a></li>
+            <li><a href='/events#fields'>Fields</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href='/groups'>Groups</a>
+          <ul>
+            <li><a href='/groups#commoner-pickup'>Commoner Pickup</a></li>
+            <li><a href='/groups#crunch'>Crunch</a></li>
+            <li><a href='/groups#city-league'>City League</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href='/info'>Useful Info</a>
+          <ul>
+            <li><a href='/info#play'>Rules</a></li>
+            <li><a href='/info#shops'>Shops</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href='/site'>Site</a>
+          <ul>
+            <li><a href='/site#contrib'>Contibuting</a></li>
+            <li><a href='/site#index'>Index</a></li>
+          </ul>
+        </li>
+      </ul>
+      <p class=icons>
+        <a href='/feed.xml' title='RSS Feed'>
+          <svg class="icon">
+            <use xlink:href='/assets/icons.svg#rss1'></use>
+          </svg>
+          <svg class="icon">
+            <use xlink:href='/assets/icons.svg#rss2'></use>
+          </svg>
+        </a>
+      </p>
+    </nav>
+    <main>
+      {{ content }}
+    </main>
+  </body>
+</html>
