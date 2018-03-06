@@ -2,8 +2,7 @@ Ultimate Frisbee in Amsterdam
 =============================
 
 This is what frisbee is: a bunch of people throwing a flat ball 
-through the air while running in circles and trying earning
-style points.
+through the air while running in circles and trying to look stylish.
 
 ## What's up Right Now!
 {: #right-now }
@@ -12,6 +11,11 @@ style points.
 
 ## Chat
 
-Come talk to use on the frisbee channel on the local slack group:
+Come talk to use on the <code>#frisbee</code> channel on the local slack group:
 
-https://slofile.com/slack/funsterdam
+<div>
+    <a class="box" href="https://slofile.com/slack/funsterdam"> 
+        <img class="left" src="/assets/funsterdam.png">
+        Join the Funsterdam Slack
+    </a>
+</div>

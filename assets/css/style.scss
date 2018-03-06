@@ -5,18 +5,22 @@
 @import "normalize";
 @import "rouge-github";
 
+$gutter: 16px;
+$vertgap: 8px;
+$border: 1px;
+
 html {
     height: 100%;
     width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, serif;
 }
 
 body {
     display: grid;
     grid-template-columns: 200px auto;
     grid-template-rows: auto;
-    grid-gap: 0;
-    background: #CCC;
-    // align-content: end;
+    grid-gap: $border;
+    background: #AAA;
     height: 100%;
 }
 
@@ -27,72 +31,100 @@ nav {
     z-index: 0;
     text-align: right;
 
-    background: #EEE;
+    background: url("/assets/sundisc.png") no-repeat #EEE;
+    background-size: 200px;
 
     ul {
-        margin: 0; padding: 0;
-
-        ul {
-            margin: 0;
-        }
+        margin: 0;
+        padding: 0;
     }
 
     li {
         margin: 0;
         padding: 0;
         list-style-type: none;
-    } 
+    }
+
+    a:link, a:visited {
+        color: inherit;
+    }
 
     > ul {
         > li {
            > a {
-            font-weight: bold;
+                border-top: solid $border #AAA;
+                font-weight: bold;
+                display: block;
+                background: #DDD;
+                // margin-top: 0
+                margin-right: -$gutter;
+                margin-left: -$gutter;
+                padding-right: $gutter;
+                text-transform: uppercase;
             }
             
-            margin: 8px 0 8px 0;
-            padding: 0 10px 0 8px;
-            border-bottom: solid 1px #AAA;
+            margin: $vertgap 0 $vertgap 0;
+            padding: 0 $gutter 0 0;
         }
     }
 
     h1 {
         font-size: 20pt;
         text-align: right;
-        margin: 0 0 0 0;
+        margin: $vertgap 0 0 0;
         padding: 0;
-        font-family: "Times New Roman";
+        font-family: inherit;
         word-spacing: 100px; 
-        color: #050505;
+        color: #000000AA;
+        text-transform: uppercase;
+        font-size: inherit;
     }
 
     header {
-        padding-right: 10px
+        padding-right: $gutter
     }
 
-    #logo {
-        position: fixed;
-        left: -200px;
-        top: -200px;
-        height: 400px;
-        width: 400px;
-        z-index: -1;
-
-        img {
-            width: 100%;
-        }
-    }
 
     .icons {
-        padding-right: 10px;
+        padding-right: $gutter;
 
         a:link { color: inherit; }
     }
 }
 
 main {
-    grid-column: 2;
-    grid-row: 1;
-    margin: 8px;
+    //grid-column: 2;
+    //grid-row: 1;
+    padding-left: $gutter;
+    //margin-left: 1px;
+    background: #FAFAFA;
+
+    > *:first-child {
+        margin-top: 0 !important;
+        border-top: 0 !important;
+    }
+
+    h1, h2, h3 {
+        text-transform: uppercase;
+        font-size: inherit;
+        margin-left: -$gutter;
+        padding-left: $gutter;
+    }
+
+    h1 {
+        background: linear-gradient(to right, #DDDDDD, #DDDDDD00);
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    h2 {
+        background: linear-gradient(to right, #DDDDDD, #DDDDDD00);
+        padding-top: 2px;
+        padding-bottom: 2px;
+        border-width: $border 0 0 0;
+        border-image: linear-gradient(to right, #AAAAAA, #AAAAAA00);
+        border-image-slice: 1;
+    }
 }
 
 section {
@@ -100,10 +132,39 @@ section {
 }
 
 .icon {
-  display: inline-block;
-  width: 1.2em;
-  height: 1.2em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.postmeta {
+    float: right;
+    margin-right: $gutter;
+    font-weight: normal;
+}
+
+.box {
+    margin-left: 40px;
+    padding: 8px 8px 8px 60px;
+    max-width: 400px;
+    background: white;
+    border-left: #CC3333 solid 4px;
+    overflow: auto;
+    display: block;
+    line-height: 40px;
+    color: inherit;
+    font-weight: bold;
+
+    &:hover { 
+        background: #FCFCFF;
+    }
+
+    .left {
+        float: left;
+        height: 40px;
+        margin-left: -60px;
+    }
 }
