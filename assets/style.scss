@@ -1,0 +1,24 @@
+---
+---
+
+// main stylesheet
+
+// for help visit:
+// http://sass-lang.com/documentation/file.SASS_REFERENCE.html
+//
+
+@import "highlight";
+@import "common";
+
+@media screen and (min-width: 500px) {
+    @import "desktop";
+}
+
+@media screen and (max-width: 500px) {
+    @import "mobile";
+}
+
+@media print {
+    @import "print";
+}
+

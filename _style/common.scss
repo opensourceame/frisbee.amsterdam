@@ -1,0 +1,131 @@
+// common layout
+//
+// colors, fonts and generic elements
+
+$border: 1px;
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    font-family: "Helvetica Neue", Helvetica, Arial, serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666
+}
+
+body {
+    background: #FAFAFA;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    font-size: inherit;
+}
+
+nav {
+    background: url("/assets/sundisc.png") no-repeat #EEE;
+    background-size: 200px;
+    text-align: right;
+
+    #title {
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #000000AA;
+    }
+
+    a:link, a:visited {
+        color: inherit;
+    }
+}
+
+main {
+    padding-bottom: 1em;
+}
+
+h1 {
+    background: linear-gradient(to right, #DDDDDD, unquote('#DDDDDD00'));
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+h2 {
+    background: linear-gradient(to right, #DDDDDD, unquote('#DDDDDD00'));
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-width: $border 0 0 0;
+    border-image: linear-gradient(to right, #AAAAAA, unquote('#AAAAAA00'));
+    border-image-slice: 1;
+}
+
+.icon {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.postmeta {
+    float: right;
+    margin-right: 20px;
+    font-weight: normal;
+}
+
+.box {
+    line-height: 1.1em;
+    margin: 0 40px;
+    padding: 8px 8px 8px 60px;
+    max-width: 400px;
+    background: white;
+    border-left: #CC3333 solid 4px;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+
+    color: inherit;
+    font-weight: bold;
+
+    &:hover { 
+        background: #FCFCFF;
+    }
+
+    .left {
+        float: left;
+        height: 40px;
+        margin-left: -60px;
+    }
+}
+
+.pagination {
+    background: #EEE;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    text-align: center;
+    overflow: auto;
+
+    .previous {
+        float: left;
+    }
+
+    .next {
+        float: right;
+    }
+}
