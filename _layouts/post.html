@@ -7,3 +7,18 @@ layout: default
 <div class="post">
   {{ content }}
 </div>
+
+<div class="pagination">
+  {% if page.previous %}
+    <span class=previous>
+        Previous:
+        <a href="{{ page.previous.url }}">{{ page.previous.title }}</a>
+    </span>
+  {% endif %}
+  {% if page.next %}
+    <span class=next>
+        Next:
+        <a href="{{ page.next.url }}">{{ page.next.title }}</a>
+    </span>
+  {% endif %}
+</div>

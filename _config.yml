@@ -1,5 +1,8 @@
 theme: jekyll-theme-architect
-paginate: 10
+paginate: 5
+paginate_path: news/page:num
+sass:
+  sass_dir: _style
 plugins:
 - jekyll-sitemap
 - jekyll-feed

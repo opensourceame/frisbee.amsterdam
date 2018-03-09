@@ -1,0 +1,97 @@
+// desktop (wide screen) layout
+
+$leftgap: 8px;
+$gutter: 16px;
+$vertgap: 8px;
+
+body {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
+    grid-gap: $border;
+    background: #AAA;
+}
+
+nav {
+    position: relative;
+    z-index: 0;
+
+    > ul {
+        > li {
+           > a {
+                border-top: solid $border #AAA;
+                font-weight: bold;
+                display: block;
+                background: #DDD;
+                // margin-top: 0
+                margin-right: -$leftgap;
+                margin-left: -$leftgap;
+                padding-right: $leftgap;
+                text-transform: uppercase;
+            }
+            
+            margin: $vertgap 0 $vertgap 0;
+            padding: 0 $leftgap 0 0;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    #title {
+        max-width: 100px;
+        word-spacing: 100px; 
+        margin: $vertgap 0 0 auto;
+        direction: rtl;
+        padding: 0;
+    }
+
+    header {
+        padding-right: $leftgap
+    }
+
+    .icons {
+        padding-right: $leftgap;
+
+        a:link { color: inherit; }
+    }
+}
+
+main {
+    padding-left: $gutter;
+    padding-right: $gutter;
+    background: #FAFAFA;
+
+    > ul {
+        margin: 0;
+        padding: 0;
+        
+        > li {
+            list-style-position: outside;
+            list-style-type: none;
+         
+            &:before {
+               float: left;
+               content: "•";
+               margin-left: -$gutter;
+               width: $gutter;
+               text-align: center;
+            }
+        }
+    }
+}
+
+h1, h2, h3, .pagination {
+    margin-left: -$gutter;
+    margin-right: -$gutter;
+    padding-left: $gutter;
+    padding-right: $gutter;
+}

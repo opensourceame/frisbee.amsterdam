@@ -4,29 +4,30 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}" media="screen" type="text/css">
-    <link rel="stylesheet" href="{{ '/assets/css/print.css' | relative_url }}" media="print" type="text/css">
+    <link rel="stylesheet" href="/assets/style.css?v={{ site.time | date: '%FT%T' }}">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <script async src="/assets/main.js?v={{ site.time | date: '%FT%T' }}"></script>
     <title>{{ page.title }} - Frisbee Amsterdam</title>
-{% seo %}
+    {% seo %}
   </head>
 
   <body>
     <nav>
       <header>
-        <h1>Your Ultimate Amsterdam Frisbee Compendium</h1>
+        <a id=title href='/'>Your Ultimate Amsterdam Frisbee Compendium</a>
       </header>
       <ul>
         <li>
           <ul>
             <li><a href='/#right-now'>Play Now</a></li>
-            <li><a href='/#chat'>Chat</a></li>
+            <li><a href='/#chat'>Contact</a></li>
           </ul>
         </li>
         <li>
           <a href='/news'>News</a>
           <ul>
             <li><a href='/news'>Latest</a></li>
-            <li><a href='/news'>Archives</a></li>
+            <li><a href='/news/archive'>Archives</a></li>
           </ul>
         </li>
         <li>
@@ -61,10 +62,7 @@
       <p class=icons>
         <a href='/feed.xml' title='RSS Feed'>
           <svg class="icon">
-            <use xlink:href='/assets/icons.svg#rss1'></use>
-          </svg>
-          <svg class="icon">
-            <use xlink:href='/assets/icons.svg#rss2'></use>
+            <use xlink:href='/assets/icons.svg#rss'></use>
           </svg>
         </a>
       </p>
