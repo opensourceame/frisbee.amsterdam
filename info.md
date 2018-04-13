@@ -15,4 +15,4 @@ Layout. Done.
 
 ## Shops
 
-It's not easy to find quality discs in Amsterdam. Good luck!
+[Frisbee Winkel](http://frisbeewinkel.nl) has a range of discs and equipment
