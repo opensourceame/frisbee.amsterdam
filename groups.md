@@ -11,7 +11,6 @@ To get in touch:
 
   * [meetup](https://www.meetup.com/Frisbee-Amsterdam/)
   * [facebook](https://www.facebook.com/groups/ultimate.amsterdam/about/)
-  * [slack](https://slofile.com/slack/funsterdam)
 
 ## Crunch
 
